@@ -18,6 +18,8 @@ jobs:
           pip install nbconvert
       - name: Convert to HTML
         run: |
+          pwd # Print the current working directory
+          ls -l # List files in the current directory
           jupyter nbconvert --to html Assignment_Submission_Prabhath_Data_Science.ipynb --output output.html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
