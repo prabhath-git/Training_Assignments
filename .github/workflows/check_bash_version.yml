@@ -1,0 +1,13 @@
+name: Check Bash Version
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-bash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Bash Version
+        run: |
+          echo "Bash version:"
+          bash --version
